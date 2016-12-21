@@ -60,7 +60,7 @@ DEBUG = False
 
 TEMPLATE_DEBUG = True
 
-ALLOWED_HOSTS = ['ops.trinitigame.com']
+ALLOWED_HOSTS = ['your_jumpserver_domain']
 
 # Application definition
 
