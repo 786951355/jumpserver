@@ -1,0 +1,6 @@
+Start at 2016-11-25 11:42:32.432538
+-bash: ulimit: open files: cannot modify limit: Operation not permitted
+]0;triniti@colo220:~[?1034h[triniti@colo220 ~]$ [K[triniti@colo220 ~]$ pwd
+/home/triniti
+]0;triniti@colo220:~[triniti@colo220 ~]$ logout
+End time is 2016-11-25 11:42:43.951068

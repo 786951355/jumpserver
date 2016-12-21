@@ -1,0 +1,54 @@
+Start at 2016-11-21 13:37:17.637005
+Last login: Fri Nov 18 01:57:54 2016 from centos-7-04
+]0;test@centos-7-02:~[?1034h[test@centos-7-02 ~]$ w
+ 00:37:24 up 74 days,  3:34,  2 users,  load average: 0.00, 0.01, 0.05
+USER     TTY      FROM             LOGIN@   IDLE   JCPU   PCPU WHAT
+root     tty1                      07Sep16 74days  0.10s  0.10s -bash
+test     pts/0    centos-7-04      00:37    4.00s  0.00s  0.00s w
+]0;test@centos-7-02:~[test@centos-7-02 ~]$ cd /v[Kap[K[Kvar/lo
+local/ lock/  log/   
+[test@centos-7-02 ~]$ cd /var/lo
+local/ lock/  log/   
+[test@centos-7-02 ~]$ cd /var/log/
+]0;test@centos-7-02:/var/log[test@centos-7-02 log]$ ll
+total 740
+drwxr-xr-x. 2 root root   4096 Sep  6 04:10 [0m[01;34manaconda[0m
+drwxr-x---. 2 root root     22 Sep  6 04:10 [01;34maudit[0m
+-rw-r--r--. 1 root root   8736 Sep  7 22:02 boot.log
+-rw-------. 1 root utmp   1152 Nov 17 21:18 btmp
+-rw-------. 1 root utmp      0 Oct  1 03:08 btmp-20161101
+-rw-r--r--. 1 root root   9479 Nov 21 00:01 cron
+-rw-r--r--. 1 root root  81443 Oct 30 03:47 cron-20161030
+-rw-r--r--. 1 root root  93073 Nov  7 03:40 cron-20161107
+-rw-r--r--. 1 root root  69455 Nov 13 03:16 cron-20161113
+-rw-r--r--. 1 root root  81531 Nov 20 03:24 cron-20161120
+-rw-r--r--. 1 root root  37091 Sep  7 22:02 dmesg
+-rw-r--r--. 1 root root  35637 Sep  6 04:36 dmesg.old
+-rw-------. 1 root root   2483 Sep  6 23:02 grubby
+-rw-r--r--. 1 root root 292876 Nov 21 00:37 lastlog
+-rw-------. 1 root root      0 Nov 20 03:24 maillog
+-rw-------. 1 root root      0 Oct 23 03:15 maillog-20161030
+-rw-------. 1 root root      0 Oct 30 03:47 maillog-20161107
+-rw-------. 1 root root      0 Nov  7 03:40 maillog-20161113
+-rw-------. 1 root root      0 Nov 13 03:16 maillog-20161120
+-rw-------. 1 root root   6126 Nov 21 00:37 messages
+-rw-------. 1 root root  25635 Oct 30 03:01 messages-20161030
+-rw-------. 1 root root  29421 Nov  7 03:01 messages-20161107
+-rw-------. 1 root root  21994 Nov 13 03:01 messages-20161113
+-rw-------. 1 root root  71260 Nov 20 03:01 messages-20161120
+drwx------. 2 root root      6 Jun 10  2014 [01;34mppp[0m
+-rw-------. 1 root root   1720 Nov 21 00:37 secure
+-rw-------. 1 root root      0 Oct 23 03:15 secure-20161030
+-rw-------. 1 root root      0 Oct 30 03:47 secure-20161107
+-rw-------. 1 root root      0 Nov  7 03:40 secure-20161113
+-rw-------. 1 root root  29849 Nov 20 01:00 secure-20161120
+-rw-------. 1 root root      0 Nov 20 03:24 spooler
+-rw-------. 1 root root      0 Oct 23 03:15 spooler-20161030
+-rw-------. 1 root root      0 Oct 30 03:47 spooler-20161107
+-rw-------. 1 root root      0 Nov  7 03:40 spooler-20161113
+-rw-------. 1 root root      0 Nov 13 03:16 spooler-20161120
+-rw-------. 1 root root      0 Sep  6 04:05 tallylog
+drwxr-xr-x. 2 root root     22 Sep  6 04:10 [01;34mtuned[0m
+-rw-rw-r--. 1 root utmp  33408 Nov 21 00:37 wtmp
+-rw-------. 1 root root  16628 Sep 13 21:18 yum.log
+]0;test@centos-7-02:/var/log[test@centos-7-02 log]$ tail -f in[K[K[K[K[K[K[K[K[K[K

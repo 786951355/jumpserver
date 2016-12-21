@@ -1,0 +1,11 @@
+Start at 2016-11-22 23:29:16.241923
+
+Welcome to aliyun Elastic Compute Service!
+
+]0;triniti@iZ25c5a54s9Z:~[?1034h[triniti@iZ25c5a54s9Z ~]$ to[K[Kw
+ 23:27:47 up 216 days,  7:47,  1 user,  load average: 0.01, 0.02, 0.00
+USER     TTY      FROM              LOGIN@   IDLE   JCPU   PCPU WHAT
+triniti  pts/1    101.230.14.213   23:27    0.00s  0.00s  0.00s w
+]0;triniti@iZ25c5a54s9Z:~[triniti@iZ25c5a54s9Z ~]$ exit
+logout
+End time is 2016-11-22 23:30:11.722146

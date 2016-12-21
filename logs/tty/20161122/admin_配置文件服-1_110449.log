@@ -1,0 +1,223 @@
+Start at 2016-11-22 11:04:49.561408
+Last login: Tue Nov 22 17:37:42 2016 from 101.230.14.213
+-bash: ulimit: open files: cannot modify limit: Operation not permitted
+]0;triniti@colo207:~[?1034h[triniti@colo207 ~]$ [K[triniti@colo207 ~]$ ifconfig
+eth0      Link encap:Ethernet  HWaddr 00:30:48:D5:40:DE  
+          inet addr:192.225.224.82  Bcast:192.225.224.255  Mask:255.255.255.0
+          inet6 addr: fe80::230:48ff:fed5:40de/64 Scope:Link
+          UP BROADCAST RUNNING MULTICAST  MTU:1500  Metric:1
+          RX packets:13526279669 errors:0 dropped:0 overruns:0 frame:0
+          TX packets:12333511451 errors:0 dropped:0 overruns:0 carrier:0
+          collisions:0 txqueuelen:1000 
+          RX bytes:1600286192493 (1.4 TiB)  TX bytes:8686661900041 (7.9 TiB)
+          Interrupt:16 Memory:fc100000-fc120000 
+
+eth0:0    Link encap:Ethernet  HWaddr 00:30:48:D5:40:DE  
+          inet addr:192.225.224.83  Bcast:192.225.224.255  Mask:255.255.255.0
+          UP BROADCAST RUNNING MULTICAST  MTU:1500  Metric:1
+          Interrupt:16 Memory:fc100000-fc120000 
+
+eth0:1    Link encap:Ethernet  HWaddr 00:30:48:D5:40:DE  
+          inet addr:192.225.224.84  Bcast:192.225.224.255  Mask:255.255.255.0
+          UP BROADCAST RUNNING MULTICAST  MTU:1500  Metric:1
+          Interrupt:16 Memory:fc100000-fc120000 
+
+eth0:2    Link encap:Ethernet  HWaddr 00:30:48:D5:40:DE  
+          inet addr:192.225.224.85  Bcast:192.225.224.255  Mask:255.255.255.0
+          UP BROADCAST RUNNING MULTICAST  MTU:1500  Metric:1
+          Interrupt:16 Memory:fc100000-fc120000 
+
+eth0:3    Link encap:Ethernet  HWaddr 00:30:48:D5:40:DE  
+          inet addr:192.225.224.86  Bcast:192.225.224.255  Mask:255.255.255.0
+          UP BROADCAST RUNNING MULTICAST  MTU:1500  Metric:1
+          Interrupt:16 Memory:fc100000-fc120000 
+
+lo        Link encap:Local Loopback  
+          inet addr:127.0.0.1  Mask:255.0.0.0
+          inet6 addr: ::1/128 Scope:Host
+          UP LOOPBACK RUNNING  MTU:65536  Metric:1
+          RX packets:1649415758 errors:0 dropped:0 overruns:0 frame:0
+          TX packets:1649415758 errors:0 dropped:0 overruns:0 carrier:0
+          collisions:0 txqueuelen:0 
+          RX bytes:469150629187 (436.9 GiB)  TX bytes:469150629187 (436.9 GiB)
+
+]0;triniti@colo207:~[triniti@colo207 ~]$ cd /app/
+]0;triniti@colo207:/app[triniti@colo207 app]$ ls
+[0m[01;34maccount[0m         [01;34mgameServer[0m  [01;31mjdk1.6.tar.gz[0m  [01;34mNewFrontServer[0m     [01;34mNewFrontServer002[0m  [01;34mNewFrontServer004[0m  [01;34mturboExtData[0m
+[01;31maccount.tar.gz[0m  [01;34mjdk1.6[0m      [01;34mlost+found[0m     [01;34mNewFrontServer001[0m  [01;34mNewFrontServer003[0m  [01;34msp-cgi[0m             [01;34mturboPlatform2[0m
+[m]0;triniti@colo207:/app[triniti@colo207 app]$ ll
+total 115316
+drwxr-xr-x.  4 root  root      4096 Apr  8  2015 [0m[01;34maccount[0m
+-rw-r--r--.  1 root  root  15384653 Apr  8  2015 [01;31maccount.tar.gz[0m
+drwxr-xr-x. 11 root  root      4096 Apr  9  2015 [01;34mgameServer[0m
+drwxr-xr-x. 10 root  root      4096 Jan 25  2013 [01;34mjdk1.6[0m
+-rw-r--r--.  1 root  root 102630987 Apr  9  2015 [01;31mjdk1.6.tar.gz[0m
+drwx------.  2 root  root     16384 Apr  8  2015 [01;34mlost+found[0m
+drwxr-xr-x.  3 nginx root      4096 Mar  5  2014 [01;34mNewFrontServer[0m
+drwxr-xr-x.  3 nginx root      4096 Mar  5  2014 [01;34mNewFrontServer001[0m
+drwxr-xr-x.  3 nginx root      4096 Feb  8  2014 [01;34mNewFrontServer002[0m
+drwxr-xr-x.  3 nginx root      4096 Feb  8  2014 [01;34mNewFrontServer003[0m
+drwxr-xr-x.  3 nginx root      4096 Mar 18  2015 [01;34mNewFrontServer004[0m
+drwxr-xr-x.  2 root  root      4096 Nov 27  2011 [01;34msp-cgi[0m
+drwxr-xr-x. 18 root  root      4096 Apr  9  2015 [01;34mturboExtData[0m
+drwxr-xr-x.  6 root  root      4096 Apr  7  2015 [01;34mturboPlatform2[0m
+[m]0;triniti@colo207:/app[triniti@colo207 app]$ tail -f /usr/local/nginx/logs/access.log
+[0.000] - 95.245.235.26 - - [22/Nov/2016:19:03:55 +0800] "GET /game/CoMIAndroid/Config_A/CoMI.txt?time=8339756 HTTP/1.1" 200 2904 "-" "Dalvik/2.1.0 (Linux; U; Android 5.0.1; GT-I9505 Build/LRX22C)" "-"
+[0.000] - 181.46.38.145 - - [22/Nov/2016:19:03:55 +0800] "GET /game/callofminizombies/CoMZombies_VS_Android.bytes?rand=1329177390 HTTP/1.1" 200 558 "-" "Dalvik/1.6.0 (Linux; U; Android 4.4.2; SM-G130M Build/KOT49H)" "-"
+[0.000] - 179.254.52.237 - - [22/Nov/2016:19:03:55 +0800] "GET /game/CoMDHAndroid/CoMDH_ClientConfig_3.1.7a/gamelevel.txt?rand=62827 HTTP/1.1" 200 26160 "-" "Dalvik/1.6.0 (Linux; U; Android 4.4.2; SM-T210 Build/KOT49H)" "-"
+[0.000] - 187.222.156.80 - - [22/Nov/2016:19:03:55 +0800] "GET /game/callofminizombies/CoMZombies_VS_Android.bytes?rand=99061351 HTTP/1.1" 200 558 "-" "Dalvik/1.6.0 (Linux; U; Android 4.4.2; P706 Build/KOT49H)" "-"
+[0.000] - 107.143.77.54 - - [22/Nov/2016:19:03:55 +0800] "GET /game/callofminizombies/CoMZombies_VS_version.bytes?rand=1076897704 HTTP/1.1" 200 559 "-" "callofminizombies/4.3.7 CFNetwork/808.1.4 Darwin/16.1.0" "-"
+[0.000] - 189.217.195.107 - - [22/Nov/2016:19:03:55 +0800] "GET /game/CoMIAndroid/Config_A/CoMI.txt?time=1872727 HTTP/1.1" 200 2904 "-" "Dalvik/2.1.0 (Linux; U; Android 5.1.1; SM-G531H Build/LMY48B)" "-"
+[0.000] - 186.77.206.30 - - [22/Nov/2016:19:03:55 +0800] "GET /game/CoMIAndroid/Config_A/CoMI.txt?time=6779251 HTTP/1.1" 200 2904 "-" "Dalvik/1.6.0 (Linux; U; Android 4.3; GT-I9300 Build/JSS15J)" "-"
+[0.000] - 73.83.10.174 - - [22/Nov/2016:19:03:55 +0800] "GET /game/CoMDS/ComDDS3.2.txt?time=728579 HTTP/1.1" 200 524 "-" "callofminibulletdudes/3.5.9 CFNetwork/758.3.15 Darwin/15.4.0" "-"
+[0.000] - 172.58.104.123 - - [22/Nov/2016:19:03:55 +0800] "GET /game/CoMsquadAndroid/CoMSquadEncrypt.txt?time=976915 HTTP/1.1" 200 1500 "-" "Dalvik/2.1.0 (Linux; U; Android 6.0.1; SM-G550T1 Build/MMB29K)" "-"
+[0.000] - 66.87.136.169 - - [22/Nov/2016:19:03:56 +0800] "GET /game/callofminizombies/CoMZombies_VS_Android.bytes?rand=245959168 HTTP/1.1" 200 558 "-" "Dalvik/2.1.0 (Linux; U; Android 5.1; N9518 Build/LMY47O)" "-"
+[0.000] - 108.202.76.184 - - [22/Nov/2016:19:03:56 +0800] "GET /game/callofminizombies2/new_version/CoMZ2_version.bytes?rand=22337 HTTP/1.1" 200 1843 "-" "callofminizombies2/2.1.2 CFNetwork/808.0.2 Darwin/16.0.0" "-"
+[0.000] - 68.175.141.104 - - [22/Nov/2016:19:03:56 +0800] "GET /game/callofminizombies/CoMZombies_VS_Android.bytes?rand=1230176347 HTTP/1.1" 200 558 "-" "Dalvik/2.1.0 (Linux; U; Android 5.1.1; KFFOWI Build/LVY48F)" "-"
+[0.000] - 72.218.37.136 - - [22/Nov/2016:19:03:56 +0800] "GET /game/callofminizombies/CoMZombies_VS_version.bytes?rand=1127525099 HTTP/1.1" 200 559 "-" "callofminizombies/4.3.7 CFNetwork/758.5.3 Darwin/15.6.0" "-"
+[0.000] - 73.184.185.13 - - [22/Nov/2016:19:03:56 +0800] "GET /game/callofminizombies/CoMZombies_VS_Android.bytes?rand=835082517 HTTP/1.1" 200 558 "-" "Dalvik/2.1.0 (Linux; U; Android 6.0; LG-V495 Build/MRA58K)" "-"
+[0.000] - 186.154.36.20 - - [22/Nov/2016:19:03:56 +0800] "GET /game/CoMIAndroid/Config_A/CoMI.txt?time=9013814 HTTP/1.1" 200 2904 "-" "Dalvik/1.6.0 (Linux; U; Android 4.3; G630-U251 Build/HuaweiG630-U251)" "-"
+[0.000] - 181.21.9.173 - - [22/Nov/2016:19:03:56 +0800] "GET /game/CoMDHAndroid/CoMDH_AdvertConfig_3.1.7a.txt?rand=30012 HTTP/1.1" 200 888 "-" "Dalvik/1.6.0 (Linux; U; Android 4.4.4; SM-G360M Build/KTU84P)" "-"
+[0.000] - 76.113.123.32 - - [22/Nov/2016:19:03:56 +0800] "GET /game/callofminizombies2/new_version/CoMZ2_version.bytes?rand=12545 HTTP/1.1" 200 1843 "-" "callofminizombies2/2.1.2 CFNetwork/758.5.3 Darwin/15.6.0" "-"
+[0.000] - 98.240.195.27 - - [22/Nov/2016:19:03:56 +0800] "GET /game/CoMIAndroid/Config_A/CoMI.txt?time=5051209 HTTP/1.1" 200 2904 "-" "Dalvik/1.6.0 (Linux; U; Android 4.4; LGL34C Build/KRT16S.L34CV10c)" "-"
+[0.000] - 162.232.220.91 - - [22/Nov/2016:19:03:56 +0800] "GET /game/callofminizombies2/new_version/CoMZ2_version.bytes?rand=99490 HTTP/1.1" 200 1843 "-" "Dalvik/1.6.0 (Linux; U; Android 4.4.2; SM-T230NU Build/KOT49H)" "-"
+[0.000] - 201.42.124.16 - - [22/Nov/2016:19:03:56 +0800] "GET /game/callofminizombies/CoMZombies_VS_Android.bytes?rand=1553196832 HTTP/1.1" 200 558 "-" "Dalvik/2.1.0 (Linux; U; Android 5.1; XT1025 Build/LPCS23.13-34.8-3)" "-"
+[0.000] - 179.254.52.237 - - [22/Nov/2016:19:03:56 +0800] "GET /game/CoMDHAndroid/CoMDH_ClientConfig_3.1.7a/ai.txt?rand=89086 HTTP/1.1" 200 3724 "-" "Dalvik/1.6.0 (Linux; U; Android 4.4.2; SM-T210 Build/KOT49H)" "-"
+[0.000] - 178.184.139.69 - - [22/Nov/2016:19:03:56 +0800] "GET /game/CoMDHAndroid/CoMDH_ClientConfigMD5_3.1.7a.txt?rand=32650 HTTP/1.1" 200 1324 "-" "Dalvik/2.1.0 (Linux; U; Android 6.0; Lenovo A2016a40 Build/MRA58K)" "-"
+[0.000] - 179.41.168.103 - - [22/Nov/2016:19:03:56 +0800] "GET /game/CoMDHAndroid/CoMDH_ServerConfig_3.1.7a.txt?rand=68371 HTTP/1.1" 200 3948 "-" "Dalvik/2.1.0 (Linux; U; Android 5.1.1; SM-J200M Build/LMY47X)" "-"
+[0.000] - 172.112.33.105 - - [22/Nov/2016:19:03:56 +0800] "GET /game/callofminizombies/CoMZombies_VS_version.bytes?rand=515984240 HTTP/1.1" 200 559 "-" "callofminizombies/4.3.7 CFNetwork/758.5.3 Darwin/15.6.0" "-"
+[0.000] - 73.96.112.159 - - [22/Nov/2016:19:03:56 +0800] "GET /game/DinoHunter_Amazon/CoMDH_ServerConfig_3.1.7am.txt?rand=73038 HTTP/1.1" 200 3948 "-" "Dalvik/2.1.0 (Linux; U; Android 5.1.1; KFARWI Build/LVY48F)" "-"
+[0.000] - 71.60.69.129 - - [22/Nov/2016:19:03:57 +0800] "GET /game/CoMI/Config_B/CoMI.txt?time=1516641 HTTP/1.1" 200 2920 "-" "callofminiinfinity/2.7 CFNetwork/758.5.3 Darwin/15.6.0" "-"
+[0.370] - 120.21.76.78 - - [22/Nov/2016:19:03:57 +0800] "GET /game/MiniWarriors/MiniWarriors_2.2.3/aserver.dat HTTP/1.0" 200 988 "-" "-" "-"
+[0.000] - 184.100.241.36 - - [22/Nov/2016:19:03:57 +0800] "GET /game/callofminizombies/CoMZombies_VS_version.bytes?rand=1557124161 HTTP/1.1" 200 559 "-" "callofminizombies/4.3.7 CFNetwork/758.5.3 Darwin/15.6.0" "-"
+[0.000] - 66.169.136.139 - - [22/Nov/2016:19:03:57 +0800] "GET /game/callofminizombies/CoMZombies_VS_Android.bytes?rand=632279398 HTTP/1.1" 200 558 "-" "Dalvik/2.1.0 (Linux; U; Android 5.1.1; KFFOWI Build/LVY48F)" "-"
+[0.000] - 179.254.52.237 - - [22/Nov/2016:19:03:57 +0800] "GET /game/CoMDHAndroid/CoMDH_ClientConfig_3.1.7a/task.txt?rand=47591 HTTP/1.1" 200 3096 "-" "Dalvik/1.6.0 (Linux; U; Android 4.4.2; SM-T210 Build/KOT49H)" "-"
+[0.000] - 98.196.77.75 - - [22/Nov/2016:19:03:57 +0800] "GET /game/CoMIAndroid_Amazon/Config_A/CoMI.txt?time=1123238 HTTP/1.1" 200 2904 "-" "Dalvik/1.6.0 (Linux; U; Android 4.4.3; KFAPWI Build/KTU84M)" "-"
+[0.000] - 172.112.60.65 - - [22/Nov/2016:19:03:57 +0800] "GET /game/callofminizombies/CoMZombies_VS_version.bytes?rand=1690464197 HTTP/1.1" 200 559 "-" "callofminizombies/4.3.7 CFNetwork/548.1.4 Darwin/11.0.0" "-"
+[0.000] - 72.220.22.155 - - [22/Nov/2016:19:03:57 +0800] "GET /game/CoMIAndroid/Config_A/CoMI.txt?time=7044979 HTTP/1.1" 200 2904 "-" "Dalvik/2.1.0 (Linux; U; Android 5.1; QTAIR7 Build/LMY47D)" "-"
+[0.000] - 190.167.39.71 - - [22/Nov/2016:19:03:57 +0800] "GET /game/callofminizombies2/new_version/CoMZ2_version.bytes?rand=58808 HTTP/1.1" 200 1843 "-" "Dalvik/1.6.0 (Linux; U; Android 4.1.2; SAMSUNG-SGH-I547 Build/JZO54K)" "-"
+[0.000] - 172.56.12.113 - - [22/Nov/2016:19:03:57 +0800] "GET /game/callofminizombies2/new_version/CoMZ2_version.bytes?rand=42727 HTTP/1.1" 200 1843 "-" "Dalvik/2.1.0 (Linux; U; Android 5.0.2; 9006W Build/LRX22G)" "-"
+[0.000] - 187.242.59.130 - - [22/Nov/2016:19:03:57 +0800] "GET /game/callofminizombies/CoMZombies_VS_version.bytes?rand=550843093 HTTP/1.1" 200 559 "-" "callofminizombies/4.3.7 CFNetwork/758.5.3 Darwin/15.6.0" "-"
+[0.000] - 184.60.142.244 - - [22/Nov/2016:19:03:57 +0800] "GET /game/callofminizombies2/new_version/CoMZ2_version.bytes?rand=21081 HTTP/1.1" 200 1843 "-" "Dalvik/2.1.0 (Linux; U; Android 5.1.1; KFFOWI Build/LVY48F)" "-"
+[0.000] - 70.119.205.87 - - [22/Nov/2016:19:03:57 +0800] "GET /game/callofminizombies2/new_version/CoMZ2_version.bytes?rand=10871 HTTP/1.1" 200 1843 "-" "callofminizombies2/2.1.2 CFNetwork/758.5.3 Darwin/15.6.0" "-"
+[0.000] - 166.137.143.89 - - [22/Nov/2016:19:03:57 +0800] "GET /game/MiniWarriors/ad_iostest/adconf_en.dat HTTP/1.1" 200 128 "-" "Mini%20Warriors/2.2.3 CFNetwork/808.1.4 Darwin/16.1.0" "-"
+[0.000] - 179.254.52.237 - - [22/Nov/2016:19:03:57 +0800] "GET /game/CoMDHAndroid/CoMDH_ClientConfig_3.1.7a/item.txt?rand=19039 HTTP/1.1" 200 6344 "-" "Dalvik/1.6.0 (Linux; U; Android 4.4.2; SM-T210 Build/KOT49H)" "-"
+[0.000] - 104.5.75.206 - - [22/Nov/2016:19:03:57 +0800] "GET /game/callofminizombies/CoMZombies_VS_version.bytes?rand=508177306 HTTP/1.1" 200 559 "-" "callofminizombies/4.3.7 CFNetwork/758.4.3 Darwin/15.5.0" "-"
+[0.000] - 99.179.149.218 - - [22/Nov/2016:19:03:57 +0800] "GET /game/callofminizombies/CoMZombies_VS_Android.bytes?rand=1201791581 HTTP/1.1" 200 558 "-" "Dalvik/2.1.0 (Linux; U; Android 5.0.2; LG-D415 Build/LRX22G)" "-"
+[0.000] - 67.140.176.105 - - [22/Nov/2016:19:03:57 +0800] "GET /game/CoMIAndroid/Config_A/CoMI.txt?time=5597444 HTTP/1.1" 200 2904 "-" "Dalvik/2.1.0 (Linux; U; Android 5.1.1; Z828 Build/LMY47V)" "-"
+[0.000] - 67.188.2.143 - - [22/Nov/2016:19:03:57 +0800] "GET /game/CoMDH/CoMDH_AdvertConfig_3.1.9.txt?rand=81403 HTTP/1.1" 200 896 "-" "callofminidinohunter/3.1.9 CFNetwork/808.0.2 Darwin/16.0.0" "-"
+[0.000] - 76.168.68.57 - - [22/Nov/2016:19:03:57 +0800] "GET /game/CoMI/Config_B/CoMI.txt?time=9290066 HTTP/1.1" 200 2920 "-" "callofminiinfinity/2.7 CFNetwork/758.5.3 Darwin/15.6.0" "-"
+[0.000] - 190.152.207.71 - - [22/Nov/2016:19:03:57 +0800] "GET /game/callofminizombies2/new_version/CoMZ2_version.bytes?rand=34166 HTTP/1.1" 200 1843 "-" "Dalvik/2.1.0 (Linux; U; Android 5.1.1; SM-J200H Build/LMY48B)" "-"
+[0.000] - 66.87.76.110 - - [22/Nov/2016:19:03:57 +0800] "GET /game/callofminizombies2/new_version/CoMZ2_version.bytes?rand=86212 HTTP/1.1" 200 1843 "-" "Dalvik/2.1.0 (Linux; U; Android 5.1.1; SM-G530P Build/LMY47X)" "-"
+[0.000] - 70.199.5.74 - - [22/Nov/2016:19:03:57 +0800] "GET /game/callofminizombies2/new_version/CoMZ2_version.bytes?rand=24610 HTTP/1.1" 200 1843 "-" "Dalvik/2.1.0 (Linux; U; Android 5.1.1; SM-J100VPP Build/LMY48B)" "-"
+[0.000] - 67.82.247.27 - - [22/Nov/2016:19:03:57 +0800] "GET /game/CoMIAndroid/Config_A/CoMI.txt?time=4575903 HTTP/1.1" 200 2904 "-" "Dalvik/2.1.0 (Linux; U; Android 5.1.1; SAMSUNG-SM-T337A Build/LMY47X)" "-"
+[0.000] - 179.254.52.237 - - [22/Nov/2016:19:03:58 +0800] "GET /game/CoMDHAndroid/CoMDH_ClientConfig_3.1.7a/character.txt?rand=44696 HTTP/1.1" 200 7488 "-" "Dalvik/1.6.0 (Linux; U; Android 4.4.2; SM-T210 Build/KOT49H)" "-"
+[0.000] - 75.106.120.124 - - [22/Nov/2016:19:03:58 +0800] "GET /game/callofminizombies/CoMZombies_VS_Android.bytes?rand=231249297 HTTP/1.1" 200 558 "-" "Dalvik/2.1.0 (Linux; U; Android 5.1.1; KFASWI Build/LVY48F)" "-"
+[0.000] - 72.69.225.175 - - [22/Nov/2016:19:03:58 +0800] "GET /game/callofminizombies2/new_version/CoMZ2_version.bytes?rand=93640 HTTP/1.1" 200 1843 "-" "callofminizombies2/2.1.2 CFNetwork/808.0.2 Darwin/16.0.0" "-"
+[0.000] - 189.217.152.48 - - [22/Nov/2016:19:03:58 +0800] "GET /game/CoMIAndroid/Config_A/CoMI.txt?time=8878721 HTTP/1.1" 200 2904 "-" "Dalvik/2.1.0 (Linux; U; Android 5.0.2; SM-G530H Build/LRX22G)" "-"
+[0.000] - 201.190.18.116 - - [22/Nov/2016:19:03:58 +0800] "GET /game/CoMDHAndroid/CoMDH_ServerConfig_3.1.7a.txt?rand=1991 HTTP/1.1" 200 3948 "-" "Dalvik/1.6.0 (Linux; U; Android 4.4.2; BLU DASH J Build/KOT49H)" "-"
+[0.000] - 200.112.253.43 - - [22/Nov/2016:19:03:58 +0800] "GET /game/callofminizombies2/new_version/CoMZ2_version.bytes?rand=3048 HTTP/1.1" 200 1843 "-" "Dalvik/2.1.0 (Linux; U; Android 6.0; LG-K430 Build/MRA58K)" "-"
+[0.000] - 73.8.102.57 - - [22/Nov/2016:19:03:58 +0800] "GET /game/CoMI/Config_B/CoMI.txt?time=9663350 HTTP/1.1" 200 2920 "-" "callofminiinfinity/2.7 CFNetwork/808.1.4 Darwin/16.1.0" "-"
+[0.000] - 187.161.176.48 - - [22/Nov/2016:19:03:58 +0800] "GET /game/callofminizombies2/new_version/CoMZ2_version.bytes?rand=79374 HTTP/1.1" 200 1843 "-" "Dalvik/1.6.0 (Linux; U; Android 4.4.2; EK-T7020 Build/KVT49L)" "-"
+[0.000] - 201.123.103.245 - - [22/Nov/2016:19:03:58 +0800] "GET /game/CoMI/Config_B/CoMI.txt?time=2035718 HTTP/1.1" 200 2920 "-" "callofminiinfinity/2.7 CFNetwork/711.2.23 Darwin/14.0.0" "-"
+[0.000] - 66.68.62.238 - - [22/Nov/2016:19:03:58 +0800] "GET /game/CoMIAndroid/Config_A/CoMI.txt?time=5656331 HTTP/1.1" 200 2904 "-" "Dalvik/2.1.0 (Linux; U; Android 6.0.1; SM-G900P Build/MMB29M)" "-"
+[0.000] - 73.96.113.63 - - [22/Nov/2016:19:03:58 +0800] "GET /game/callofminizombies2/new_version/CoMZ2_version.bytes?rand=54342 HTTP/1.1" 200 1843 "-" "Dalvik/2.1.0 (Linux; U; Android 5.1.1; KFFOWI Build/LVY48F)" "-"
+[0.000] - 179.254.52.237 - - [22/Nov/2016:19:03:58 +0800] "GET /game/CoMDHAndroid/CoMDH_ClientConfig_3.1.7a/dropgroup.txt?rand=23002 HTTP/1.1" 200 3944 "-" "Dalvik/1.6.0 (Linux; U; Android 4.4.2; SM-T210 Build/KOT49H)" "-"
+[0.000] - 67.3.241.123 - - [22/Nov/2016:19:03:58 +0800] "GET /game/CoMIAndroid_Amazon/Config_A/CoMI.txt?time=4588811 HTTP/1.1" 200 2904 "-" "Dalvik/2.1.0 (Linux; U; Android 5.1.1; KFFOWI Build/LVY48F)" "-"
+[0.000] - 66.25.149.76 - - [22/Nov/2016:19:03:58 +0800] "GET /game/callofminizombies/CoMZombies_VS_Android.bytes?rand=1712313974 HTTP/1.1" 200 558 "-" "Dalvik/2.1.0 (Linux; U; Android 5.1.1; KFFOWI Build/LVY48F)" "-"
+[0.000] - 104.34.61.243 - - [22/Nov/2016:19:03:58 +0800] "GET /game/callofminizombies2/new_version/CoMZ2_version.bytes?rand=20238 HTTP/1.1" 200 1843 "-" "Dalvik/2.1.0 (Linux; U; Android 6.0.1; SM-T350 Build/MMB29M)" "-"
+[0.000] - 201.227.226.145 - - [22/Nov/2016:19:03:58 +0800] "GET /game/CoMIAndroid/Config_A/CoMI.txt?time=4422370 HTTP/1.1" 200 2904 "-" "Dalvik/1.6.0 (Linux; U; Android 4.4.4; GT-I9060C Build/KTU84P)" "-"
+[0.000] - 68.58.167.215 - - [22/Nov/2016:19:03:58 +0800] "GET /game/CoMI/Config_B/CoMI.txt?time=1388791 HTTP/1.1" 200 2920 "-" "callofminiinfinity/2.7 CFNetwork/808.1.4 Darwin/16.1.0" "-"
+[0.000] - 216.14.149.127 - - [22/Nov/2016:19:03:58 +0800] "GET /game/callofminizombies2/new_version/CoMZ2_version.bytes?rand=29329 HTTP/1.1" 200 1843 "-" "Dalvik/1.6.0 (Linux; U; Android 4.4.4; XT830C Build/KXC21.5-40)" "-"
+[0.000] - 187.161.176.48 - - [22/Nov/2016:19:03:58 +0800] "GET /game/callofminizombies2/new_version/CoMZ2_version.bytes?rand=69791 HTTP/1.1" 200 1843 "-" "Dalvik/1.6.0 (Linux; U; Android 4.1.2; XT914 Build/2_32A_2012)" "-"
+[0.000] - 68.81.225.79 - - [22/Nov/2016:19:03:58 +0800] "GET /game/CoMI/Config_B/CoMI.txt?time=365764 HTTP/1.1" 200 2920 "-" "callofminiinfinity/2.7 CFNetwork/758.3.15 Darwin/15.4.0" "-"
+[0.000] - 8.27.177.130 - - [22/Nov/2016:19:03:58 +0800] "GET /game/callofminizombies2/new_version/CoMZ2_version.bytes?rand=91646 HTTP/1.1" 200 1843 "-" "Dalvik/2.1.0 (Linux; U; Android 5.1.1; KFARWI Build/LVY48F)" "-"
+[0.000] - 201.233.254.218 - - [22/Nov/2016:19:03:58 +0800] "GET /game/callofminizombies2/new_version/CoMZ2_version.bytes?rand=28802 HTTP/1.1" 200 1843 "-" "Dalvik/1.6.0 (Linux; U; Android 4.4.2; Kids Build/KVT49L)" "-"
+[0.000] - 168.195.206.1 - - [22/Nov/2016:19:03:58 +0800] "GET /game/callofminizombies2/new_version/CoMZ2_version.bytes?rand=23444 HTTP/1.1" 200 1843 "-" "Dalvik/2.1.0 (Linux; U; Android 6.0; LG-K580 Build/MRA58K)" "-"
+^C
+]0;triniti@colo207:/app[triniti@colo207 app]$ ll
+total 115316
+drwxr-xr-x.  4 root  root      4096 Apr  8  2015 [0m[01;34maccount[0m
+-rw-r--r--.  1 root  root  15384653 Apr  8  2015 [01;31maccount.tar.gz[0m
+drwxr-xr-x. 11 root  root      4096 Apr  9  2015 [01;34mgameServer[0m
+drwxr-xr-x. 10 root  root      4096 Jan 25  2013 [01;34mjdk1.6[0m
+-rw-r--r--.  1 root  root 102630987 Apr  9  2015 [01;31mjdk1.6.tar.gz[0m
+drwx------.  2 root  root     16384 Apr  8  2015 [01;34mlost+found[0m
+drwxr-xr-x.  3 nginx root      4096 Mar  5  2014 [01;34mNewFrontServer[0m
+drwxr-xr-x.  3 nginx root      4096 Mar  5  2014 [01;34mNewFrontServer001[0m
+drwxr-xr-x.  3 nginx root      4096 Feb  8  2014 [01;34mNewFrontServer002[0m
+drwxr-xr-x.  3 nginx root      4096 Feb  8  2014 [01;34mNewFrontServer003[0m
+drwxr-xr-x.  3 nginx root      4096 Mar 18  2015 [01;34mNewFrontServer004[0m
+drwxr-xr-x.  2 root  root      4096 Nov 27  2011 [01;34msp-cgi[0m
+drwxr-xr-x. 18 root  root      4096 Apr  9  2015 [01;34mturboExtData[0m
+drwxr-xr-x.  6 root  root      4096 Apr  7  2015 [01;34mturboPlatform2[0m
+[m]0;triniti@colo207:/app[triniti@colo207 app]$ ll turboPlatform2/
+total 13612
+-rw-r--r--.  1 root root  445288 Apr  7  2015 [0m[01;31mantlr-2.7.7.jar[0m
+-rw-r--r--.  1 root root   43579 Apr  7  2015 [01;31masm-3.3.1.jar[0m
+-rw-r--r--.  1 root root 1663318 Apr  7  2015 [01;31mbcprov-jdk15-145.jar[0m
+-rw-r--r--.  1 root root  610790 Apr  7  2015 [01;31mc3p0-0.9.1.2.jar[0m
+-rw-r--r--.  1 root root  188671 Apr  7  2015 [01;31mcommons-beanutils.jar[0m
+-rw-r--r--.  1 root root  571259 Apr  7  2015 [01;31mcommons-collections.jar[0m
+-rw-r--r--.  1 root root   32321 Apr  7  2015 [01;31mcommons-email-1.2.jar[0m
+-rw-r--r--.  1 root root  245274 Apr  7  2015 [01;31mcommons-lang-2.3.jar[0m
+-rw-r--r--.  1 root root   52915 Apr  7  2015 [01;31mcommons-logging-1.1.jar[0m
+drwxr-xr-x.  2 root root    4096 Apr  7  2015 [01;34mconf[0m
+-rw-r--r--.  1 root root   86381 Apr  7  2015 [01;31mezmorph-1.0.4.jar[0m
+-rw-r--r--.  1 root root 5038779 Apr  7  2015 [01;31mgroovy-1.7.6.jar[0m
+-rw-r--r--.  1 root root  145532 Apr  7  2015 [01;31mJavaPNS.jar[0m
+-rw-r--r--.  1 root root  259414 Apr  7  2015 [01;31mjavolution.jar[0m
+-rw-r--r--.  1 root root  151839 Apr  7  2015 [01;31mjson-lib.jar[0m
+drwxr-xr-x. 16 root root  290816 Nov 22 11:00 [01;34mlog[0m
+-rw-r--r--.  1 root root  358180 Apr  7  2015 [01;31mlog4j-1.2.13.jar[0m
+-rwxr-xr-x.  1 root root      61 Apr  7  2015 [01;32mlogrm.sh[0m
+drwxr-xr-x.  2 root root    4096 Apr  7  2015 [01;34mMETA-INF[0m
+-rw-r--r--.  1 root root  512707 Apr  7  2015 [01;31mmysql-connector-java-5.0.5-bin.jar[0m
+-rwxr-xr-x.  1 root root     459 Apr  7  2015 [01;32mrun.sh[0m
+drwxr-xr-x.  2 root root    4096 Apr  7  2015 [01;34mscript[0m
+-rw-r--r--.  1 root root   58243 Apr  7  2015 [01;31msimpleFramework.jar[0m
+-rw-r--r--.  1 root root 2949316 Apr  7  2015 [01;31mspring.jar[0m
+-r-xr-xr-x.  1 root root      37 Apr  7  2015 [01;32mstart.sh[0m
+-rwxr-xr-x.  1 root root     429 Apr  7  2015 [01;32mstop.sh[0m
+-rw-r--r--.  1 root root   74792 Apr  7  2015 [01;31mturboPlatform2.jar[0m
+-rw-r--r--.  1 root root   74792 Apr  7  2015 [01;31mturboPlatform.jar[0m
+[m]0;triniti@colo207:/app[triniti@colo207 app]$ tail -f l[KturboPlatform2/log/info.log
+16-11-22 19:03:45:   ServerHandler.handleTask, begin
+16-11-22 19:03:45:   ServerHandler.handleTask, command:Login
+16-11-22 19:03:45:   ServerHandler.handleTask, request cookie:
+16-11-22 19:03:45:   ServerHandler.handleTask, request json:{"deviceid":"B0FBBE60-64E8-4516-99BE-5650764EE79F","appname":"callofminidoubleshot","nickname":""}
+16-11-22 19:03:45:   ServerHandler.handleTask, client ip:127.0.0.1
+16-11-22 19:03:45:   {"deviceid":"B0FBBE60-64E8-4516-99BE-5650764EE79F","appname":"callofminidoubleshot","nickname":""}
+16-11-22 19:03:45:   {"code":"0","uuid":"2e547880-7983-4274-9a03-b4842da5d011","uid":0,"deviceid":"B0FBBE60-64E8-4516-99BE-5650764EE79F"}
+16-11-22 19:03:45:   ServerHandler.handleTask, response cookie:
+16-11-22 19:03:45:   ServerHandler.handleTask, response json:{"code":"0","uuid":"2e547880-7983-4274-9a03-b4842da5d011","uid":0,"deviceid":"B0FBBE60-64E8-4516-99BE-5650764EE79F"}
+16-11-22 19:03:45:   ServerHandler.handleTask, end
+16-11-22 19:04:27:   ServerHandler.handleTask, begin
+16-11-22 19:04:27:   ServerHandler.handleTask, command:insertLearderboard
+16-11-22 19:04:27:   ServerHandler.handleTask, request cookie:
+16-11-22 19:04:27:   ServerHandler.handleTask, request json:{"alliancename":"", "leaderboardid":1002, "rankname":"Hunter", "score":523, "uuid":"06325440-c9be-4efd-97a7-55921db99388"}
+16-11-22 19:04:27:   ServerHandler.handleTask, client ip:127.0.0.1
+16-11-22 19:04:27:   ServerHandler.handleTask, begin
+16-11-22 19:04:27:   ServerHandler.handleTask, command:insertLearderboard
+16-11-22 19:04:27:   ServerHandler.handleTask, request cookie:
+16-11-22 19:04:27:   ServerHandler.handleTask, request json:{"alliancename":"", "leaderboardid":1003, "rankname":"Hunter", "score":7, "uuid":"06325440-c9be-4efd-97a7-55921db99388"}
+16-11-22 19:04:27:   ServerHandler.handleTask, client ip:127.0.0.1
+16-11-22 19:04:27:   ServerHandler.handleTask, response cookie:
+16-11-22 19:04:27:   ServerHandler.handleTask, response json:{"code":0}
+16-11-22 19:04:27:   ServerHandler.handleTask, end
+16-11-22 19:04:27:   ServerHandler.handleTask, response cookie:
+16-11-22 19:04:27:   ServerHandler.handleTask, response json:{"code":0}
+16-11-22 19:04:27:   ServerHandler.handleTask, end
+16-11-22 19:04:33:   ServerHandler.handleTask, begin
+16-11-22 19:04:33:   ServerHandler.handleTask, command:Login
+16-11-22 19:04:33:   ServerHandler.handleTask, request cookie:
+16-11-22 19:04:33:   ServerHandler.handleTask, request json:{"deviceid":"B7013585-D88F-4AFE-AEAF-4A9BE7244AF6","appname":"callofminidoubleshot","nickname":""}
+16-11-22 19:04:33:   ServerHandler.handleTask, client ip:127.0.0.1
+16-11-22 19:04:33:   {"deviceid":"B7013585-D88F-4AFE-AEAF-4A9BE7244AF6","appname":"callofminidoubleshot","nickname":""}
+16-11-22 19:04:33:   {"code":"0","uuid":"387972bf-f7cc-4c5d-abd2-eda8c4985c82","uid":0,"deviceid":"B7013585-D88F-4AFE-AEAF-4A9BE7244AF6"}
+16-11-22 19:04:33:   ServerHandler.handleTask, response cookie:
+16-11-22 19:04:33:   ServerHandler.handleTask, response json:{"code":"0","uuid":"387972bf-f7cc-4c5d-abd2-eda8c4985c82","uid":0,"deviceid":"B7013585-D88F-4AFE-AEAF-4A9BE7244AF6"}
+16-11-22 19:04:33:   ServerHandler.handleTask, end
+^C
+]0;triniti@colo207:/app[triniti@colo207 app]$ logout
+End time is 2016-11-22 11:07:41.362588

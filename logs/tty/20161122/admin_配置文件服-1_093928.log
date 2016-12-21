@@ -1,0 +1,58 @@
+Start at 2016-11-22 09:39:28.451736
+Last login: Tue Nov 22 17:35:23 2016 from 101.230.14.213
+-bash: ulimit: open files: cannot modify limit: Operation not permitted
+]0;triniti@colo207:~[?1034h[triniti@colo207 ~]$ [K[triniti@colo207 ~]$ ifconfig
+eth0      Link encap:Ethernet  HWaddr 00:30:48:D5:40:DE  
+          inet addr:192.225.224.82  Bcast:192.225.224.255  Mask:255.255.255.0
+          inet6 addr: fe80::230:48ff:fed5:40de/64 Scope:Link
+          UP BROADCAST RUNNING MULTICAST  MTU:1500  Metric:1
+          RX packets:13525217529 errors:0 dropped:0 overruns:0 frame:0
+          TX packets:12332569893 errors:0 dropped:0 overruns:0 carrier:0
+          collisions:0 txqueuelen:1000 
+          RX bytes:1600159794528 (1.4 TiB)  TX bytes:8686060976681 (7.8 TiB)
+          Interrupt:16 Memory:fc100000-fc120000 
+
+eth0:0    Link encap:Ethernet  HWaddr 00:30:48:D5:40:DE  
+          inet addr:192.225.224.83  Bcast:192.225.224.255  Mask:255.255.255.0
+          UP BROADCAST RUNNING MULTICAST  MTU:1500  Metric:1
+          Interrupt:16 Memory:fc100000-fc120000 
+
+eth0:1    Link encap:Ethernet  HWaddr 00:30:48:D5:40:DE  
+          inet addr:192.225.224.84  Bcast:192.225.224.255  Mask:255.255.255.0
+          UP BROADCAST RUNNING MULTICAST  MTU:1500  Metric:1
+          Interrupt:16 Memory:fc100000-fc120000 
+
+eth0:2    Link encap:Ethernet  HWaddr 00:30:48:D5:40:DE  
+          inet addr:192.225.224.85  Bcast:192.225.224.255  Mask:255.255.255.0
+          UP BROADCAST RUNNING MULTICAST  MTU:1500  Metric:1
+          Interrupt:16 Memory:fc100000-fc120000 
+
+eth0:3    Link encap:Ethernet  HWaddr 00:30:48:D5:40:DE  
+          inet addr:192.225.224.86  Bcast:192.225.224.255  Mask:255.255.255.0
+          UP BROADCAST RUNNING MULTICAST  MTU:1500  Metric:1
+          Interrupt:16 Memory:fc100000-fc120000 
+
+lo        Link encap:Local Loopback  
+          inet addr:127.0.0.1  Mask:255.0.0.0
+          inet6 addr: ::1/128 Scope:Host
+          UP LOOPBACK RUNNING  MTU:65536  Metric:1
+          RX packets:1649371831 errors:0 dropped:0 overruns:0 frame:0
+          TX packets:1649371831 errors:0 dropped:0 overruns:0 carrier:0
+          collisions:0 txqueuelen:0 
+          RX bytes:469142591979 (436.9 GiB)  TX bytes:469142591979 (436.9 GiB)
+
+]0;triniti@colo207:~[triniti@colo207 ~]$ tail -f /var/log/messages
+tail: cannot open `/var/log/messages' for reading: Permission denied
+tail: no files remaining
+]0;triniti@colo207:~[triniti@colo207 ~]$ sudo tail -f /[K/var/log/messages
+Nov 22 17:24:07 colo207 yum[8849]: Updated: libselinux-devel-2.0.94-7.el6.x86_64
+Nov 22 17:24:58 colo207 ansible-user: Invoked with comment=None ssh_key_bits=2048 update_password=always non_unique=False force=False uid=None ssh_key_passphrase=None home=None append=False ssh_key_type=rsa ssh_key_comment=ansible-generated on colo207 group=None system=False state=present shell=/bin/bash expires=None ssh_key_file=None groups=None move_home=False password=NOT_LOGGING_PASSWORD name=triniti createhome=True remove=False login_class=None generate_ssh_key=None 
+Nov 22 17:25:02 colo207 ansible-authorized_key: Invoked with exclusive=False key_options=None state=present user=triniti key= path=None unique=False manage_dir=True 
+Nov 22 17:28:00 colo207 ansible-setup: Invoked with filter=* fact_path=/etc/ansible/facts.d 
+Nov 22 17:30:59 colo207 ansible-user: Invoked with comment=None ssh_key_bits=2048 update_password=always non_unique=False force=False uid=None ssh_key_passphrase=None home=None append=False ssh_key_type=rsa ssh_key_comment=ansible-generated on colo207 group=None system=False state=present shell=/bin/bash expires=None ssh_key_file=None groups=None move_home=False password=NOT_LOGGING_PASSWORD name=triniti createhome=True remove=False login_class=None generate_ssh_key=None 
+Nov 22 17:31:05 colo207 ansible-authorized_key: Invoked with exclusive=False key_options=None state=present user=triniti key= path=None unique=False manage_dir=True 
+Nov 22 17:32:10 colo207 ansible-user: Invoked with comment=None ssh_key_bits=2048 update_password=always non_unique=False force=False uid=None ssh_key_passphrase=None home=None append=False ssh_key_type=rsa ssh_key_comment=ansible-generated on colo207 group=None system=False state=present shell=/bin/bash expires=None ssh_key_file=None groups=None move_home=False password=NOT_LOGGING_PASSWORD name=triniti createhome=True remove=False login_class=None generate_ssh_key=None 
+Nov 22 17:32:15 colo207 ansible-authorized_key: Invoked with exclusive=False key_options=None state=present user=triniti key= path=None unique=False manage_dir=True 
+Nov 22 17:34:07 colo207 ansible-user: Invoked with comment=None ssh_key_bits=2048 update_password=always non_unique=False force=False uid=None ssh_key_passphrase=None home=None append=False ssh_key_type=rsa ssh_key_comment=ansible-generated on colo207 group=None system=False state=present shell=/bin/bash expires=None ssh_key_file=None groups=None move_home=False password=NOT_LOGGING_PASSWORD name=triniti createhome=True remove=False login_class=None generate_ssh_key=None 
+Nov 22 17:34:12 colo207 ansible-authorized_key: Invoked with exclusive=False key_options=None state=present user=triniti key= path=None unique=False manage_dir=True 
+^C]0;triniti@colo207:~[triniti@colo207 ~]$ End time is 2016-11-22 09:45:06.376287

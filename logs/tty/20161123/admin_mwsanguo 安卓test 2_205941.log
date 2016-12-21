@@ -1,0 +1,110 @@
+Start at 2016-11-23 20:59:41.186645
+Last login: Wed Nov 23 15:06:32 2016 from 101.230.14.213
+
+Welcome to aliyun Elastic Compute Service!
+
+]0;triniti@iZ25c5a54s9Z:~[?1034h[triniti@iZ25c5a54s9Z ~]$ [K[triniti@iZ25c5a54s9Z ~]$ top
+[H[2J(B[mtop - 20:57:49 up 217 days,  5:17,  1 user,  load average: 0.15, 0.03, 0.01(B[m[39;49m[K
+Tasks:(B[m[39;49m(B[m 125 (B[m[39;49mtotal,(B[m[39;49m(B[m   1 (B[m[39;49mrunning,(B[m[39;49m(B[m 124 (B[m[39;49msleeping,(B[m[39;49m(B[m   0 (B[m[39;49mstopped,(B[m[39;49m(B[m   0 (B[m[39;49mzombie(B[m[39;49m[K
+Cpu(s):(B[m[39;49m(B[m  3.2%(B[m[39;49mus,(B[m[39;49m(B[m  2.3%(B[m[39;49msy,(B[m[39;49m(B[m  0.0%(B[m[39;49mni,(B[m[39;49m(B[m 94.3%(B[m[39;49mid,(B[m[39;49m(B[m  0.1%(B[m[39;49mwa,(B[m[39;49m(B[m  0.0%(B[m[39;49mhi,(B[m[39;49m(B[m  0.0%(B[m[39;49msi,(B[m[39;49m(B[m  0.0%(B[m[39;49mst(B[m[39;49m[K
+Mem: (B[m[39;49m(B[m  8061644k (B[m[39;49mtotal,(B[m[39;49m(B[m  5697944k (B[m[39;49mused,(B[m[39;49m(B[m  2363700k (B[m[39;49mfree,(B[m[39;49m(B[m   290368k (B[m[39;49mbuffers(B[m[39;49m[K
+Swap:(B[m[39;49m(B[m        0k (B[m[39;49mtotal,(B[m[39;49m(B[m        0k (B[m[39;49mused,(B[m[39;49m(B[m        0k (B[m[39;49mfree,(B[m[39;49m(B[m   781784k (B[m[39;49mcached(B[m[39;49m[K
+[6;1H
+[7m  PID USER      PR  NI  VIRT  RES  SHR S %CPU %MEM    TIME+  COMMAND                                (B[m[39;49m[K
+(B[m 4483 root      20   0  787m 500m 1128 S  2.0  6.4 706:46.43 ServerManager                          (B[m[39;49m
+(B[m 6865 root      20   0 3310m 312m 5020 S  2.0  4.0   1351:06 java                                   (B[m[39;49m
+(B[m10357 root      20   0 3260m 560m 4964 S  2.0  7.1 763:29.01 java                                   (B[m[39;49m
+(B[m25427 root      20   0 1699m 247m  28m S  2.0  3.1 113:56.00 DistributedObje                        (B[m[39;49m
+(B[m    1 root      20   0 19232 1096  800 S  0.0  0.0   0:11.05 init                                   (B[m[39;49m
+(B[m    2 root      20   0     0    0    0 S  0.0  0.0   0:00.00 kthreadd                               (B[m[39;49m
+(B[m    3 root      RT   0     0    0    0 S  0.0  0.0   0:16.30 migration/0                            (B[m[39;49m
+(B[m    4 root      20   0     0    0    0 S  0.0  0.0   8:00.80 ksoftirqd/0                            (B[m[39;49m
+(B[m    5 root      RT   0     0    0    0 S  0.0  0.0   0:00.00 migration/0                            (B[m[39;49m
+(B[m    6 root      RT   0     0    0    0 S  0.0  0.0   0:20.11 watchdog/0                             (B[m[39;49m
+(B[m    7 root      RT   0     0    0    0 S  0.0  0.0   0:17.19 migration/1                            (B[m[39;49m
+(B[m    8 root      RT   0     0    0    0 S  0.0  0.0   0:00.00 migration/1                            (B[m[39;49m
+(B[m    9 root      20   0     0    0    0 S  0.0  0.0   9:09.89 ksoftirqd/1                            (B[m[39;49m
+(B[m   10 root      RT   0     0    0    0 S  0.0  0.0   0:15.75 watchdog/1                             (B[m[39;49m
+(B[m   11 root      20   0     0    0    0 S  0.0  0.0   9:18.26 events/0                               (B[m[39;49m
+(B[m   12 root      20   0     0    0    0 S  0.0  0.0  12:21.78 events/1                               (B[m[39;49m
+(B[m   13 root      20   0     0    0    0 S  0.0  0.0   0:00.00 cgroup                                 (B[m[39;49m
+(B[m   14 root      20   0     0    0    0 S  0.0  0.0   0:00.00 khelper                                (B[m[39;49m
+(B[m   15 root      20   0     0    0    0 S  0.0  0.0   0:00.00 netns                                  (B[m[39;49m
+(B[m   16 root      20   0     0    0    0 S  0.0  0.0   0:00.00 async/mgr                              (B[m[39;49m
+(B[m   17 root      20   0     0    0    0 S  0.0  0.0   0:00.00 pm                                     (B[m[39;49m
+(B[m   18 root      20   0     0    0    0 S  0.0  0.0   0:39.67 sync_supers                            (B[m[39;49m
+(B[m   19 root      20   0     0    0    0 S  0.0  0.0   0:50.72 bdi-default                            (B[m[39;49m
+(B[m   20 root      20   0     0    0    0 S  0.0  0.0   0:00.00 kintegrityd/0                          (B[m[39;49m
+(B[m   21 root      20   0     0    0    0 S  0.0  0.0   0:00.00 kintegrityd/1                          (B[m[39;49m
+(B[m   22 root      20   0     0    0    0 S  0.0  0.0  15:59.20 kblockd/0                              (B[m[39;49m
+(B[m   23 root      20   0     0    0    0 S  0.0  0.0   1:01.31 kblockd/1                              (B[m[39;49m
+(B[m   24 root      20   0     0    0    0 S  0.0  0.0   0:00.00 kacpid                                 (B[m[39;49m[6;1H[K[H(B[mtop - 20:57:52 up 217 days,  5:17,  1 user,  load average: 0.15, 0.03, 0.01(B[m[39;49m[K
+Tasks:(B[m[39;49m(B[m 125 (B[m[39;49mtotal,(B[m[39;49m(B[m   1 (B[m[39;49mrunning,(B[m[39;49m(B[m 124 (B[m[39;49msleeping,(B[m[39;49m(B[m   0 (B[m[39;49mstopped,(B[m[39;49m(B[m   0 (B[m[39;49mzombie(B[m[39;49m[K
+Cpu(s):(B[m[39;49m(B[m  2.2%(B[m[39;49mus,(B[m[39;49m(B[m  1.5%(B[m[39;49msy,(B[m[39;49m(B[m  0.0%(B[m[39;49mni,(B[m[39;49m(B[m 96.1%(B[m[39;49mid,(B[m[39;49m(B[m  0.2%(B[m[39;49mwa,(B[m[39;49m(B[m  0.0%(B[m[39;49mhi,(B[m[39;49m(B[m  0.0%(B[m[39;49msi,(B[m[39;49m(B[m  0.0%(B[m[39;49mst(B[m[39;49m[K
+Mem: (B[m[39;49m(B[m  8061644k (B[m[39;49mtotal,(B[m[39;49m(B[m  5698068k (B[m[39;49mused,(B[m[39;49m(B[m  2363576k (B[m[39;49mfree,(B[m[39;49m(B[m   290368k (B[m[39;49mbuffers(B[m[39;49m[K
+Swap:(B[m[39;49m(B[m        0k (B[m[39;49mtotal,(B[m[39;49m(B[m        0k (B[m[39;49mused,(B[m[39;49m(B[m        0k (B[m[39;49mfree,(B[m[39;49m(B[m   781788k (B[m[39;49mcached(B[m[39;49m[K
+[6;1H
+[7m  PID USER      PR  NI  VIRT  RES  SHR S %CPU %MEM    TIME+  COMMAND                                (B[m[39;49m[K
+(B[m25427 root      20   0 1699m 247m  28m S  4.3  3.1 113:56.13 DistributedObje                        (B[m[39;49m
+(B[m 1600 root      20   0 1804m 305m 5040 S  1.0  3.9   1155:52 java                                   (B[m[39;49m
+(B[m 6865 root      20   0 3310m 312m 5020 S  1.0  4.0   1351:06 java                                   (B[m[39;49m
+(B[m 4483 root      20   0  787m 500m 1128 S  0.3  6.4 706:46.44 ServerManager                          (B[m[39;49m
+(B[m 9442 root      20   0 3253m 541m 4968 S  0.3  6.9 125:13.66 java                                   (B[m[39;49m
+(B[m 9672 root      20   0 3242m 377m 4944 S  0.3  4.8 175:10.50 java                                   (B[m[39;49m
+(B[m10357 root      20   0 3260m 560m 4964 S  0.3  7.1 763:29.02 java                                   (B[m[39;49m
+(B[m21276 root      20   0  207m 8356 2704 S  0.3  0.1 274:51.10 AliHids                                (B[m[39;49m
+(B[m25948 root      20   0 3247m 142m 4936 S  0.3  1.8 111:46.29 java                                   (B[m[39;49m
+(B[m28670 root      20   0 67348 5828 2712 S  0.3  0.1 495:24.05 AliYunDun                              (B[m[39;49m
+(B[m30090 root      20   0 2379m 584m 5176 S  0.3  7.4 370:18.98 java                                   (B[m[39;49m
+(B[m30254 root      20   0  1584  384  176 S  0.3  0.0 122:05.08 aliyun-service                         (B[m[39;49m
+(B[m    1 root      20   0 19232 1096  800 S  0.0  0.0   0:11.05 init                                   (B[m[39;49m
+(B[m    2 root      20   0     0    0    0 S  0.0  0.0   0:00.00 kthreadd                               (B[m[39;49m
+(B[m    3 root      RT   0     0    0    0 S  0.0  0.0   0:16.30 migration/0                            (B[m[39;49m
+(B[m    4 root      20   0     0    0    0 S  0.0  0.0   8:00.80 ksoftirqd/0                            (B[m[39;49m
+(B[m    5 root      RT   0     0    0    0 S  0.0  0.0   0:00.00 migration/0                            (B[m[39;49m
+(B[m    6 root      RT   0     0    0    0 S  0.0  0.0   0:20.11 watchdog/0                             (B[m[39;49m
+(B[m    7 root      RT   0     0    0    0 S  0.0  0.0   0:17.19 migration/1                            (B[m[39;49m
+(B[m    8 root      RT   0     0    0    0 S  0.0  0.0   0:00.00 migration/1                            (B[m[39;49m
+(B[m    9 root      20   0     0    0    0 S  0.0  0.0   9:09.89 ksoftirqd/1                            (B[m[39;49m
+(B[m   10 root      RT   0     0    0    0 S  0.0  0.0   0:15.75 watchdog/1                             (B[m[39;49m
+(B[m   11 root      20   0     0    0    0 S  0.0  0.0   9:18.26 events/0                               (B[m[39;49m
+(B[m   12 root      20   0     0    0    0 S  0.0  0.0  12:21.78 events/1                               (B[m[39;49m
+(B[m   13 root      20   0     0    0    0 S  0.0  0.0   0:00.00 cgroup                                 (B[m[39;49m
+(B[m   14 root      20   0     0    0    0 S  0.0  0.0   0:00.00 khelper                                (B[m[39;49m
+(B[m   15 root      20   0     0    0    0 S  0.0  0.0   0:00.00 netns                                  (B[m[39;49m
+(B[m   16 root      20   0     0    0    0 S  0.0  0.0   0:00.00 async/mgr                              (B[m[39;49m[6;1H[K[H(B[mtop - 20:57:55 up 217 days,  5:17,  1 user,  load average: 0.13, 0.03, 0.01(B[m[39;49m[K
+Tasks:(B[m[39;49m(B[m 125 (B[m[39;49mtotal,(B[m[39;49m(B[m   1 (B[m[39;49mrunning,(B[m[39;49m(B[m 124 (B[m[39;49msleeping,(B[m[39;49m(B[m   0 (B[m[39;49mstopped,(B[m[39;49m(B[m   0 (B[m[39;49mzombie(B[m[39;49m[K
+Cpu(s):(B[m[39;49m(B[m  2.2%(B[m[39;49mus,(B[m[39;49m(B[m  1.2%(B[m[39;49msy,(B[m[39;49m(B[m  0.0%(B[m[39;49mni,(B[m[39;49m(B[m 96.5%(B[m[39;49mid,(B[m[39;49m(B[m  0.2%(B[m[39;49mwa,(B[m[39;49m(B[m  0.0%(B[m[39;49mhi,(B[m[39;49m(B[m  0.0%(B[m[39;49msi,(B[m[39;49m(B[m  0.0%(B[m[39;49mst(B[m[39;49m[K
+Mem: (B[m[39;49m(B[m  8061644k (B[m[39;49mtotal,(B[m[39;49m(B[m  5698068k (B[m[39;49mused,(B[m[39;49m(B[m  2363576k (B[m[39;49mfree,(B[m[39;49m(B[m   290368k (B[m[39;49mbuffers(B[m[39;49m[K
+Swap:(B[m[39;49m(B[m        0k (B[m[39;49mtotal,(B[m[39;49m(B[m        0k (B[m[39;49mused,(B[m[39;49m(B[m        0k (B[m[39;49mfree,(B[m[39;49m(B[m   781796k (B[m[39;49mcached(B[m[39;49m[K
+[6;1H
+[7m  PID USER      PR  NI  VIRT  RES  SHR S %CPU %MEM    TIME+  COMMAND                                (B[m[39;49m[K
+(B[m25427 root      20   0 1699m 247m  28m S  4.7  3.1 113:56.27 DistributedObje                        (B[m[39;49m
+
+
+(B[m29019 mysql     20   0 1164m  66m 4116 S  0.7  0.8 849:24.65 mysqld                                 (B[m[39;49m
+(B[m 4483 root      20   0  787m 500m 1128 S  0.3  6.4 706:46.45 ServerManager                          (B[m[39;49m
+(B[m 9442 root      20   0 3253m 541m 4968 S  0.3  6.9 125:13.67 java                                   (B[m[39;49m
+(B[m10357 root      20   0 3260m 560m 4964 S  0.3  7.1 763:29.03 java                                   (B[m[39;49m
+(B[m21276 root      20   0  207m 8356 2704 S  0.3  0.1 274:51.11 AliHids                                (B[m[39;49m
+(B[m28670 root      20   0 67348 5828 2712 S  0.3  0.1 495:24.06 AliYunDun                              (B[m[39;49m
+(B[m29337 root      20   0  138m  10m 1112 S  0.3  0.1 251:54.58 redis-server                           (B[m[39;49m
+(B[m    1 root      20   0 19232 1096  800 S  0.0  0.0   0:11.05 init                                   (B[m[39;49m
+(B[m    2 root      20   0     0    0    0 S  0.0  0.0   0:00.00 kthreadd                               (B[m[39;49m
+(B[m    3 root      RT   0     0    0    0 S  0.0  0.0   0:16.30 migration/0                            (B[m[39;49m
+(B[m    4 root      20   0     0    0    0 S  0.0  0.0   8:00.80 ksoftirqd/0                            (B[m[39;49m
+(B[m    5 root      RT   0     0    0    0 S  0.0  0.0   0:00.00 migration/0                            (B[m[39;49m
+(B[m    6 root      RT   0     0    0    0 S  0.0  0.0   0:20.11 watchdog/0                             (B[m[39;49m
+(B[m    7 root      RT   0     0    0    0 S  0.0  0.0   0:17.19 migration/1                            (B[m[39;49m
+(B[m    8 root      RT   0     0    0    0 S  0.0  0.0   0:00.00 migration/1                            (B[m[39;49m
+(B[m    9 root      20   0     0    0    0 S  0.0  0.0   9:09.89 ksoftirqd/1                            (B[m[39;49m
+(B[m   10 root      RT   0     0    0    0 S  0.0  0.0   0:15.75 watchdog/1                             (B[m[39;49m
+(B[m   11 root      20   0     0    0    0 S  0.0  0.0   9:18.26 events/0                               (B[m[39;49m
+(B[m   12 root      20   0     0    0    0 S  0.0  0.0  12:21.78 events/1                               (B[m[39;49m
+(B[m   13 root      20   0     0    0    0 S  0.0  0.0   0:00.00 cgroup                                 (B[m[39;49m
+(B[m   14 root      20   0     0    0    0 S  0.0  0.0   0:00.00 khelper                                (B[m[39;49m
+(B[m   15 root      20   0     0    0    0 S  0.0  0.0   0:00.00 netns                                  (B[m[39;49m
+(B[m   16 root      20   0     0    0    0 S  0.0  0.0   0:00.00 async/mgr                              (B[m[39;49m
+(B[m   17 root      20   0     0    0    0 S  0.0  0.0   0:00.00 pm                                     (B[m[39;49m
+(B[m   18 root      20   0     0    0    0 S  0.0  0.0   0:39.67 sync_supers                            (B[m[39;49m[6;1H[K[36;1H[?12l[?25h
+]0;triniti@iZ25c5a54s9Z:~[triniti@iZ25c5a54s9Z ~]$ l[KEnd time is 2016-11-23 21:00:22.127748

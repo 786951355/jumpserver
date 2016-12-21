@@ -1,0 +1,5 @@
+Start at 2016-11-18 10:21:27.100148
+Last failed login: Thu Nov 17 21:18:37 EST 2016 from centos-7-04 on ssh:notty
+There were 3 failed login attempts since the last successful login.
+Last login: Thu Nov 17 21:15:10 2016 from centos-7-04
+]0;test@centos-7-02:~[?1034h[test@centos-7-02 ~]$ End time is 2016-11-18 10:21:38.010957

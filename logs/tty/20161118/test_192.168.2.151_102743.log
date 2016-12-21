@@ -1,0 +1,9 @@
+Start at 2016-11-18 10:27:43.470014
+Last login: Thu Nov 17 21:18:59 2016 from centos-7-04
+]0;test@centos-7-01:~[?1034h[test@centos-7-01 ~]$ w
+ 21:27:51 up 72 days, 59 min,  2 users,  load average: 0.00, 0.01, 0.05
+USER     TTY      FROM             LOGIN@   IDLE   JCPU   PCPU WHAT
+root     tty1                      07Sep16 70days  0.06s  0.06s -bash
+test     pts/0    centos-7-04      21:27    7.00s  0.00s  0.00s w
+]0;test@centos-7-01:~[test@centos-7-01 ~]$ sud[K[K[Klogout
+End time is 2016-11-18 10:28:01.983612

@@ -1,0 +1,11 @@
+Start at 2016-11-18 09:46:39.143289
+Last login: Mon Oct 10 02:03:48 2016 from 192.168.2.48
+]0;test@centos-7-01:~[?1034h[test@centos-7-01 ~]$ [K[test@centos-7-01 ~]$ [K[test@centos-7-01 ~]$ [K[test@centos-7-01 ~]$ [K[test@centos-7-01 ~]$ [K[test@centos-7-01 ~]$ [K[test@centos-7-01 ~]$ [K[test@centos-7-01 ~]$ [K[test@centos-7-01 ~]$ 
+]0;test@centos-7-01:~[test@centos-7-01 ~]$ ww
+-bash: ww: command not found
+]0;test@centos-7-01:~[test@centos-7-01 ~]$ w
+w: 60 column window is too narrow
+]0;test@centos-7-01:~[test@centos-7-01 ~]$ [K[test@centos-7-01 ~]$ d[K
+]0;test@centos-7-01:~[test@centos-7-01 ~]$ w
+w: 60 column window is too narrow
+]0;test@centos-7-01:~[test@centos-7-01 ~]$ End time is 2016-11-18 09:49:44.893273

@@ -1,0 +1,113 @@
+Start at 2016-11-18 14:53:33.870158
+Last login: Fri Nov 18 01:31:23 2016 from centos-7-04
+]0;test@centos-7-01:~[?1034h[test@centos-7-01 ~]$ w
+ 01:53:43 up 72 days,  5:25,  2 users,  load average: 0.00, 0.01, 0.05
+USER     TTY      FROM             LOGIN@   IDLE   JCPU   PCPU WHAT
+root     tty1                      07Sep16 71days  0.06s  0.06s -bash
+test     pts/0    centos-7-04      01:53    7.00s  0.00s  0.00s w
+]0;test@centos-7-01:~[test@centos-7-01 ~]$ top
+[?1h=[?25l[H[2J(B[mtop - 01:53:46 up 72 days,  5:25,  2 users,  load average: 0.00, 0.01, 0.05(B[m[39;49m(B[m[39;49m[K
+Tasks:(B[m[39;49m[1m 107 (B[m[39;49mtotal,(B[m[39;49m[1m   1 (B[m[39;49mrunning,(B[m[39;49m[1m 106 (B[m[39;49msleeping,(B[m[39;49m[1m   0 (B[m[39;49mstopped,(B[m[39;49m[1m   0 (B[m[39;49mzombie(B[m[39;49m(B[m[39;49m[K
+%Cpu(s):(B[m[39;49m[1m  0.0 (B[m[39;49mus,(B[m[39;49m[1m  0.0 (B[m[39;49msy,(B[m[39;49m[1m  0.0 (B[m[39;49mni,(B[m[39;49m[1m 99.9 (B[m[39;49mid,(B[m[39;49m[1m  0.0 (B[m[39;49mwa,(B[m[39;49m[1m  0.0 (B[m[39;49mhi,(B[m[39;49m[1m  0.0 (B[m[39;49msi,(B[m[39;49m[1m  0.0 (B[m[39;49mst(B[m[39;49m(B[m[39;49m[K
+KiB Mem :(B[m[39;49m[1m  1017092 (B[m[39;49mtotal,(B[m[39;49m[1m   591112 (B[m[39;49mfree,(B[m[39;49m[1m   216600 (B[m[39;49mused,(B[m[39;49m[1m   209380 (B[m[39;49mbuff/cache(B[m[39;49m(B[m[39;49m[K
+KiB Swap:(B[m[39;49m[1m   839676 (B[m[39;49mtotal,(B[m[39;49m[1m     7332 (B[m[39;49mfree,(B[m[39;49m[1m   832344 (B[m[39;49mused.(B[m[39;49m[1m   630552 (B[m[39;49mavail Mem (B[m[39;49m(B[m[39;49m[K
+[K
+[7m  PID USER      PR  NI    VIRT    RES    SHR S  %CPU %MEM     TIME+ COMMAND                         (B[m[39;49m[K
+(B[m    1 root      20   0  192224   5524   1512 S   0.0  0.5   1:14.95 systemd                         (B[m[39;49m[K
+(B[m    2 root      20   0       0      0      0 S   0.0  0.0   0:00.47 kthreadd                        (B[m[39;49m[K
+(B[m    3 root      20   0       0      0      0 S   0.0  0.0   0:01.24 ksoftirqd/0                     (B[m[39;49m[K
+(B[m    5 root       0 -20       0      0      0 S   0.0  0.0   0:00.00 kworker/0:0H                    (B[m[39;49m[K
+(B[m    7 root      rt   0       0      0      0 S   0.0  0.0   0:00.43 migration/0                     (B[m[39;49m[K
+(B[m    8 root      20   0       0      0      0 S   0.0  0.0   0:00.00 rcu_bh                          (B[m[39;49m[K
+(B[m    9 root      20   0       0      0      0 S   0.0  0.0   0:00.00 rcuob/0                         (B[m[39;49m[K
+(B[m   10 root      20   0       0      0      0 S   0.0  0.0   0:00.00 rcuob/1                         (B[m[39;49m[K
+(B[m   11 root      20   0       0      0      0 S   0.0  0.0   1:08.64 rcu_sched                       (B[m[39;49m[K
+(B[m   12 root      20   0       0      0      0 S   0.0  0.0   1:32.54 rcuos/0                         (B[m[39;49m[K
+(B[m   13 root      20   0       0      0      0 S   0.0  0.0   0:25.66 rcuos/1                         (B[m[39;49m[K
+(B[m   14 root      rt   0       0      0      0 S   0.0  0.0   0:14.47 watchdog/0                      (B[m[39;49m[K
+(B[m   15 root      rt   0       0      0      0 S   0.0  0.0   0:12.36 watchdog/1                      (B[m[39;49m[K
+(B[m   16 root      rt   0       0      0      0 S   0.0  0.0   0:00.45 migration/1                     (B[m[39;49m[K
+(B[m   17 root      20   0       0      0      0 S   0.0  0.0   0:00.33 ksoftirqd/1                     (B[m[39;49m[K
+(B[m   19 root       0 -20       0      0      0 S   0.0  0.0   0:00.00 kworker/1:0H                    (B[m[39;49m[K
+(B[m   20 root       0 -20       0      0      0 S   0.0  0.0   0:00.00 khelper                         (B[m[39;49m[K
+(B[m   21 root      20   0       0      0      0 S   0.0  0.0   0:00.00 kdevtmpfs                       (B[m[39;49m[K
+(B[m   22 root       0 -20       0      0      0 S   0.0  0.0   0:00.00 netns                           (B[m[39;49m[K
+(B[m   23 root       0 -20       0      0      0 S   0.0  0.0   0:00.00 writeback                       (B[m[39;49m[K
+(B[m   24 root       0 -20       0      0      0 S   0.0  0.0   0:00.00 kintegrityd                     (B[m[39;49m[K
+(B[m   25 root       0 -20       0      0      0 S   0.0  0.0   0:00.00 bioset                          (B[m[39;49m[K
+(B[m   26 root       0 -20       0      0      0 S   0.0  0.0   0:00.00 kblockd                         (B[m[39;49m[K
+(B[m   27 root      20   0       0      0      0 S   0.0  0.0   0:00.00 khubd                           (B[m[39;49m[K
+(B[m   28 root       0 -20       0      0      0 S   0.0  0.0   0:00.00 md                              (B[m[39;49m[K
+(B[m   31 root      20   0       0      0      0 S   0.0  0.0   0:00.76 khungtaskd                      (B[m[39;49m[K
+(B[m   32 root      20   0       0      0      0 S   0.0  0.0   0:05.07 kswapd0                         (B[m[39;49m[K
+(B[m   33 root      25   5       0      0      0 S   0.0  0.0   0:00.00 ksmd                            (B[m[39;49m[K[?1l>[36;1H
+[?12l[?25h[K]0;test@centos-7-01:~[test@centos-7-01 ~]$ su[K[K
+Display all 1400 possibilities? (y or n)
+:                               htpasswd                        prove
+!                               httpd                           prtstat
+./                              httxt2dbm                       ps
+[                               hunspell                        psed
+[[                              hwclock                         psfaddtable
+]]                              i386                            psfgettable
+{                               iconv                           psfstriptable
+}                               iconvconfig                     psfxtable
+a2p                             iconvconfig.x86_64              pstree
+ab                              id                              pstree.x11
+accessdb                        idlj                            pstruct
+aclocal                         idn                             ptx
+aclocal-1.13                    if                              purge_relay_logs
+addgnupghome                    ifcfg                           pushd
+addpart                         ifconfig                        pvchange
+addr2line                       ifdown                          pvck
+agetty                          ifenslave                       pvcreate
+alias                           ifnames                         pvdisplay
+alternatives                    ifstat                          pvmove
+anacron                         ifup                            pvremove
+apachectl                       igawk                           pvresize
+appletviewer                    in                              pvs
+apply_diff_relay_logs           info                            pvscan
+applygnupgdefaults              infocmp                         pwck
+apr-1-config                    infokey                         pwconv
+apropos                         infotocap                       pwd
+apt                             init                            pwdx
+apu-1-config                    innochecksum                    pwhistory_helper
+ar                              insmod                          pwmake
+arch                            install                         pwscore
+arp                             install-info                    pwunconv
+arpd                            installkernel                   pydoc
+arping                          instmodsh                       pygmentize
+as                              intel-microcode2ucode           python
+--More--[K[test@centos-7-01 ~]$ ll
+total 0
+]0;test@centos-7-01:~[test@centos-7-01 ~]$ ll[K[Kvim /etc/passwd
+[?1049h[?1h=[2;1H▽[6n[1;1H  [1;1H[1;35r[?12;25h[?12l[?25h[27m[m[H[2J[?25l[35;1H"/etc/passwd" [readonly] 27L, 1367C[>c[1;1H[36mroot[m:[35mx[m:[31m0[m:[31m0[m:[34mroot[m:[32m/root[m:[33m/bin/bash[m
+[36mbin[m:[35mx[m:[31m1[m:[31m1[m:[34mbin[m:[32m/bin[m:[33m/sbin/nologin[m
+[36mdaemon[m:[35mx[m:[31m2[m:[31m2[m:[34mdaemon[m:[32m/sbin[m:[33m/sbin/nologin[m
+[36madm[m:[35mx[m:[31m3[m:[31m4[m:[34madm[m:[32m/var/adm[m:[33m/sbin/nologin[m
+[36mlp[m:[35mx[m:[31m4[m:[31m7[m:[34mlp[m:[32m/var/spool/lpd[m:[33m/sbin/nologin[m
+[36msync[m:[35mx[m:[31m5[m:[31m0[m:[34msync[m:[32m/sbin[m:[33m/bin/sync[m
+[36mshutdown[m:[35mx[m:[31m6[m:[31m0[m:[34mshutdown[m:[32m/sbin[m:[33m/sbin/shutdown[m
+[36mhalt[m:[35mx[m:[31m7[m:[31m0[m:[34mhalt[m:[32m/sbin[m:[33m/sbin/halt[m
+[36mmail[m:[35mx[m:[31m8[m:[31m12[m:[34mmail[m:[32m/var/spool/mail[m:[33m/sbin/nologin[m
+[36moperator[m:[35mx[m:[31m11[m:[31m0[m:[34moperator[m:[32m/root[m:[33m/sbin/nologin[m
+[36mgames[m:[35mx[m:[31m12[m:[31m100[m:[34mgames[m:[32m/usr/games[m:[33m/sbin/nologin[m
+[36mftp[m:[35mx[m:[31m14[m:[31m50[m:[34mFTP User[m:[32m/var/ftp[m:[33m/sbin/nologin[m
+[36mnobody[m:[35mx[m:[31m99[m:[31m99[m:[34mNobody[m:[32m/[m:[33m/sbin/nologin[m
+[36mavahi-autoipd[m:[35mx[m:[31m170[m:[31m170[m:[34mAvahi IPv4LL Stack[m:[32m/var/lib/avahi-autoipd[m:[33m/sbin/nologin[m
+[36mdbus[m:[35mx[m:[31m81[m:[31m81[m:[34mSystem message bus[m:[32m/[m:[33m/sbin/nologin[m
+[36mpolkitd[m:[35mx[m:[31m999[m:[31m998[m:[34mUser for polkitd[m:[32m/[m:[33m/sbin/nologin[m
+[36mtss[m:[35mx[m:[31m59[m:[31m59[m:[34mAccount used by the trousers package to sandbox the tcsd daemon[m:[32m/dev/null[m:[33m/sbin/nologin[m
+[36mpostfix[m:[35mx[m:[31m89[m:[31m89[m::[32m/var/spool/postfix[m:[33m/sbin/nologin[m
+[36msshd[m:[35mx[m:[31m74[m:[31m74[m:[34mPrivilege-separated SSH[m:[32m/var/empty/sshd[m:[33m/sbin/nologin[m
+[36msystemd-bus-proxy[m:[35mx[m:[31m998[m:[31m996[m:[34msystemd Bus Proxy[m:[32m/[m:[33m/sbin/nologin[m
+[36msystemd-network[m:[35mx[m:[31m997[m:[31m995[m:[34msystemd Network Management[m:[32m/[m:[33m/sbin/nologin[m
+[36msaslauth[m:[35mx[m:[31m996[m:[31m76[m:[34mSaslauthd user[m:[32m/run/saslauthd[m:[33m/sbin/nologin[m
+[36mgeoclue[m:[35mx[m:[31m995[m:[31m994[m:[34mUser for geoclue[m:[32m/var/lib/geoclue[m:[33m/sbin/nologin[m
+[36mmysql[m:[35mx[m:[31m1000[m:[31m1000[m::[32m/home/mysql[m:[33m/sbin/nologin[m
+[36mapache[m:[35mx[m:[31m48[m:[31m48[m:[34mApache[m:[32m/usr/share/httpd[m:[33m/sbin/nologin[m
+[36mnginx[m:[35mx[m:[31m994[m:[31m993[m:[34mNginx web server[m:[32m/var/lib/nginx[m:[33m/sbin/nologin[m
+[36mtest[m:[35mx[m:[31m1001[m:[31m1001[m::[32m/home/test[m:[33m/bin/bash[m
+[1m[34m~                                                                                                   [29;1H~                                                                                                   [30;1H~                                                                                                   [31;1H~                                                                                                   [32;1H~                                                                                                   [33;1H~                                                                                                   [34;1H~                                                                                                   [m[35;83H1,1[11CAll[1;1H[?12l[?25hP+q436f\P+q6b75\P+q6b64\P+q6b72\P+q6b6c\P+q2332\P+q2334\P+q2569\P+q2a37\P+q6b31\P+q6b32\P+q6b33\P+q6b34\P+q6b35\P+q6b36\P+q6b37\P+q6b38\P+q6b39\P+q6b3b\P+q4631\P+q4632\P+q2531\P+q2638\P+q6b62\P+q6b49\P+q6b44\P+q6b68\P+q4037\P+q6b50\P+q6b4e\P+q4b31\P+q4b33\P+q4b34\P+q4b35\P+q6b42\[?25l[35;83H27,1[27;1H[?12l[?25h[?25l[35;84H6[26;1H[?12l[?25h[?25l[35;86H2[26;2H[?12l[?25h[?25l[35;86H3[26;3H[?12l[?25h[?25l[35;86H4[26;4H[?12l[?25h[?25l[35;86H5[26;5H[?12l[?25h[?25l[35;86H6[26;6H[?12l[?25h[?25l[35;86H7[26;7H[?12l[?25h[?25l[35;86H8[26;8H[?12l[?25h[?25l[35;86H9[26;9H[?12l[?25h[?25l[35;86H10[26;10H[?12l[?25h[?25l[35;87H1[26;11H[?12l[?25h[?25l[35;87H2[26;12H[?12l[?25h[?25l[35;87H3[26;13H[?12l[?25h[?25l[35;87H4[26;14H[?12l[?25h[?25l[35;87H5[26;15H[?12l[?25h[?25l[35;87H6[26;16H[?12l[?25h[?25l[35;87H7[26;17H[?12l[?25h[?25l[35;87H8[26;18H[?12l[?25h[?25l[35;87H9[26;19H[?12l[?25h[?25l[35;86H20[26;20H[?12l[?25h[?25l[35;87H1[26;21H[?12l[?25h[?25l[35;87H2[26;22H[?12l[?25h[?25l[35;87H3[26;23H[?12l[?25h[?25l[35;87H4[26;24H[?12l[?25h[?25l[35;87H5[26;25H[?12l[?25h[?25l[35;87H6[26;26H[?12l[?25h[?25l[35;87H7[26;27H[?12l[?25h[?25l[35;87H8[26;28H[?12l[?25h[?25l[35;87H9[26;29H[?12l[?25h[?25l[35;86H30[26;30H[?12l[?25h[?25l[35;87H1[26;31H[?12l[?25h[?25l[35;87H2[26;32H[?12l[?25h[?25l[35;87H3[26;33H[?12l[?25h[?25l[35;87H4[26;34H[?12l[?25h[?25l[35;87H5[26;35H[?12l[?25h[?25l[35;87H6[26;36H[?12l[?25h[?25l[35;87H7[26;37H[?12l[?25h[?25l[35;87H8[26;38H[?12l[?25h[?25l[35;87H9[26;39H[?12l[?25h[?25l[35;86H40[26;40H[?12l[?25h[?25l[35;87H1[26;41H[?12l[?25h[?25l[35;87H2[26;42H[?12l[?25h[?25l[35;87H3[26;43H[?12l[?25h[?25l[35;87H4[26;44H[?12l[?25h[?25l[35;87H5[26;45H[?12l[?25h[?25l[35;87H6[26;46H[?12l[?25h[?25l[35;87H7[26;47H[?12l[?25h[?25l[35;87H8[26;48H[?12l[?25h[?25l[35;87H9[26;49H[?12l[?25h[?25l[35;86H50[26;50H[?12l[?25h[?25l[35;87H1[26;51H[?12l[?25h[?25l[35;87H2[26;52H[?12l[?25h[?25l[35;87H3[26;53H[?12l[?25h[?25l[35;87H4[26;54H[?12l[?25h[?25l[35;87H5[26;55H[?12l[?25h[?25l[35;87H6[26;56H[?12l[?25h[?25l[35;87H7[26;57H[?12l[?25h[?25l[35;87H8[26;58H[?12l[?25h[?25l[35;87H9[26;59H[?12l[?25h[?25l[35;86H60[26;60H[?12l[?25h[?25l[35;87H1[26;61H[?12l[?25h[?25l[35;1H[1m-- INSERT --[m[35;13H[K[35;83H26,62[9CAll[35;14H[31mW10: Warning: Changing a readonly file[m[35;83H[K[26;62H[33md[m[35;83H26,63[9CAll[26;63H[?12l[?25h[35;1H[K[26;62H[?25l[35;83H26,62[9CAll[26;62H[?12l[?25h[?25l[35;1H[1m[37m[41mE45: 'readonly' option is set (add ! to override)[m[35;83H[K[35;83H26,62[9CAll[26;62H[?12l[?25h[?25l[35;1H[K[35;1H:[?12l[?25hw[?25l[?12l[?25hq[?25l[?12l[?25h![?25l[?12l[?25h[?25l"/etc/passwd"
+[1m[37m[41m"/etc/passwd" E212: Can't open file for writing[m
+[32mPress ENTER or type command to continue[?12l[?25h[m[1;1H[2L[?25l[1;1H[36mroot[m:[35mx[m:[31m0[m:[31m0[m:[34mroot[m:[32m/root[m:[33m/bin/bash[m
+[36mbin[m:[35mx[m:[31m1[m:[31m1[m:[34mbin[m:[32m/bin[m:[33m/sbin/nologin[m[35;1H[K[35;83H26,62[9CAll[26;62H[?12l[?25h[?25l[26;62H[K[35;87H1[26;61H[?12l[?25h[?25l[35;83H[K[35;1H:[?12l[?25hq[?25l[?12l[?25h![?25l[?12l[?25h[?25l[35;1H[K[35;1H[?1l>[?12l[?25h[?1049l]0;test@centos-7-01:~[test@centos-7-01 ~]$ End time is 2016-11-18 14:54:47.201184

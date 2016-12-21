@@ -1,0 +1,9 @@
+Start at 2016-11-18 15:59:06.592360
+Last login: Fri Nov 18 02:29:05 2016 from centos-7-04
+]0;chenkui@centos-7-03:~[?1034h[chenkui@centos-7-03 ~]$ w
+ 02:59:11 up 72 days, 22:07,  3 users,  load average: 0.00, 0.01, 0.05
+USER     TTY      FROM             LOGIN@   IDLE   JCPU   PCPU WHAT
+root     tty1                      07Sep16 71days  0.13s  0.13s -bash
+root     pts/0    192.168.2.48     02:09   30:15   0.00s  0.00s -bash
+chenkui  pts/1    centos-7-04      02:59    6.00s  0.00s  0.00s w
+]0;chenkui@centos-7-03:~[chenkui@centos-7-03 ~]$ End time is 2016-11-18 16:24:03.841354

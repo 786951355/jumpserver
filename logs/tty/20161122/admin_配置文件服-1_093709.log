@@ -1,0 +1,61 @@
+Start at 2016-11-22 09:37:09.631788
+-bash: ulimit: open files: cannot modify limit: Operation not permitted
+]0;triniti@colo207:~[?1034h[triniti@colo207 ~]$ [K[triniti@colo207 ~]$ w
+ 17:35:28 up 593 days, 18:03,  1 user,  load average: 0.17, 0.05, 0.01
+USER     TTY      FROM              LOGIN@   IDLE   JCPU   PCPU WHAT
+triniti  pts/0    101.230.14.213   17:35    0.00s  0.03s  0.02s w
+]0;triniti@colo207:~[triniti@colo207 ~]$ cat /etc/passwd
+root:x:0:0:root:/root:/bin/bash
+bin:x:1:1:bin:/bin:/sbin/nologin
+daemon:x:2:2:daemon:/sbin:/sbin/nologin
+adm:x:3:4:adm:/var/adm:/sbin/nologin
+lp:x:4:7:lp:/var/spool/lpd:/sbin/nologin
+sync:x:5:0:sync:/sbin:/bin/sync
+shutdown:x:6:0:shutdown:/sbin:/sbin/shutdown
+halt:x:7:0:halt:/sbin:/sbin/halt
+mail:x:8:12:mail:/var/spool/mail:/sbin/nologin
+uucp:x:10:14:uucp:/var/spool/uucp:/sbin/nologin
+operator:x:11:0:operator:/root:/sbin/nologin
+games:x:12:100:games:/usr/games:/sbin/nologin
+gopher:x:13:30:gopher:/var/gopher:/sbin/nologin
+ftp:x:14:50:FTP User:/var/ftp:/sbin/nologin
+nobody:x:99:99:Nobody:/:/sbin/nologin
+vcsa:x:69:69:virtual console memory owner:/dev:/sbin/nologin
+saslauth:x:499:76:Saslauthd user:/var/empty/saslauth:/sbin/nologin
+postfix:x:89:89::/var/spool/postfix:/sbin/nologin
+sshd:x:74:74:Privilege-separated SSH:/var/empty/sshd:/sbin/nologin
+apache:x:48:48:Apache:/var/www:/sbin/nologin
+nginx:x:500:500::/home/nginx:/sbin/nologin
+mysql:x:27:27:MySQL Server:/var/lib/mysql:/bin/bash
+zabbix:x:501:501::/home/zabbix:/sbin/nologin
+triniti:x:502:502::/home/triniti:/bin/bash
+]0;triniti@colo207:~[triniti@colo207 ~]$ ll
+total 0
+]0;triniti@colo207:~[triniti@colo207 ~]$ pwd
+/home/triniti
+]0;triniti@colo207:~[triniti@colo207 ~]$ ll .ssh/
+total 12
+-rw-------. 1 triniti triniti 401 Nov 22 17:25 authorized_keys
+-rw-------. 1 triniti triniti 401 Nov 22 17:22 tmpd6tjDJ
+-rw-------. 1 triniti triniti 401 Nov 22 17:20 tmpMKJWNU
+]0;triniti@colo207:~[triniti@colo207 ~]$ cat .ssh/tmpd6tjDJ 
+ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQCdtOL6/LVpy80jKmFUl7e1jB+djdhk7JvK1RJ3/NUG3VOZUpdSX9hpEKXnpzMI6Vst8bIOVLyrtetP7NROlAzsan4NecMwuu5qeI/sNw1Q9VGzQ+oKY5H7ovsh2ASovWlAl0SVh3N9EFJeR18EAiQWJiHsfpaQejBm0QbLudijzTDxMZrN8AOek6QwQJTi/GWoFrTOlOk+DtHKx0Zcyaj7GVu2aGc3HCW9JoNoXSkOCmi81yW3gKqfSiBcogqim7xjRtQwBGrYpmO4Mrv+T/uRWHhK5epFHPatAVRSbmyiXmdzTfgDRYX3OMiuF373z1RdNQLZtVlkb2SpdoZBJvib jumpserver@jiankong
+]0;triniti@colo207:~[triniti@colo207 ~]$ cat .ssh/tmpd6tjDJ [K[K[K[K[K[K[KMKJWNU 
+ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQCdtOL6/LVpy80jKmFUl7e1jB+djdhk7JvK1RJ3/NUG3VOZUpdSX9hpEKXnpzMI6Vst8bIOVLyrtetP7NROlAzsan4NecMwuu5qeI/sNw1Q9VGzQ+oKY5H7ovsh2ASovWlAl0SVh3N9EFJeR18EAiQWJiHsfpaQejBm0QbLudijzTDxMZrN8AOek6QwQJTi/GWoFrTOlOk+DtHKx0Zcyaj7GVu2aGc3HCW9JoNoXSkOCmi81yW3gKqfSiBcogqim7xjRtQwBGrYpmO4Mrv+T/uRWHhK5epFHPatAVRSbmyiXmdzTfgDRYX3OMiuF373z1RdNQLZtVlkb2SpdoZBJvib jumpserver@jiankong
+]0;triniti@colo207:~[triniti@colo207 ~]$ cat .ssh/tmpMKJWNU [K[K[K[K[K[K[K[K[K[Kauthorized_keys 
+ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQCdtOL6/LVpy80jKmFUl7e1jB+djdhk7JvK1RJ3/NUG3VOZUpdSX9hpEKXnpzMI6Vst8bIOVLyrtetP7NROlAzsan4NecMwuu5qeI/sNw1Q9VGzQ+oKY5H7ovsh2ASovWlAl0SVh3N9EFJeR18EAiQWJiHsfpaQejBm0QbLudijzTDxMZrN8AOek6QwQJTi/GWoFrTOlOk+DtHKx0Zcyaj7GVu2aGc3HCW9JoNoXSkOCmi81yW3gKqfSiBcogqim7xjRtQwBGrYpmO4Mrv+T/uRWHhK5epFHPatAVRSbmyiXmdzTfgDRYX3OMiuF373z1RdNQLZtVlkb2SpdoZBJvib jumpserver@jiankong
+]0;triniti@colo207:~[triniti@colo207 ~]$ [K[triniti@colo207 ~]$ cat .ssh/authorized_keys 
+ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQCdtOL6/LVpy80jKmFUl7e1jB+djdhk7JvK1RJ3/NUG3VOZUpdSX9hpEKXnpzMI6Vst8bIOVLyrtetP7NROlAzsan4NecMwuu5qeI/sNw1Q9VGzQ+oKY5H7ovsh2ASovWlAl0SVh3N9EFJeR18EAiQWJiHsfpaQejBm0QbLudijzTDxMZrN8AOek6QwQJTi/GWoFrTOlOk+DtHKx0Zcyaj7GVu2aGc3HCW9JoNoXSkOCmi81yW3gKqfSiBcogqim7xjRtQwBGrYpmO4Mrv+T/uRWHhK5epFHPatAVRSbmyiXmdzTfgDRYX3OMiuF373z1RdNQLZtVlkb2SpdoZBJvib jumpserver@jiankong
+]0;triniti@colo207:~[triniti@colo207 ~]$ rm .ssh/tmp* -rf
+]0;triniti@colo207:~[triniti@colo207 ~]$ ll /tmp/
+total 1076
+drwxr-xr-x. 2 root   root      4096 May 20  2016 [0m[01;34mhsperfdata_root[0m
+-rw-------. 1 root   root         0 Apr  8  2015 yum.log
+-rw-rw-r--. 1 zabbix zabbix   29809 Nov 20 22:56 zabbix_agentd.log
+-rw-rw-r--. 1 zabbix zabbix 1048681 Nov 18 10:55 zabbix_agentd.log.old
+-rw-rw-r--. 1 zabbix zabbix       4 Jan  8  2016 zabbix_agentd.pid
+[m]0;triniti@colo207:~[triniti@colo207 ~]$ ll .ssh/
+total 4
+-rw-------. 1 triniti triniti 401 Nov 22 17:25 authorized_keys
+]0;triniti@colo207:~[triniti@colo207 ~]$ logout
+End time is 2016-11-22 09:39:19.541529
